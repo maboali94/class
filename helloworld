@@ -1,4 +1,131 @@
-Hello world
-Hi 
-Today
-Mac
+1.	Domain name system – traffics host names into IP address and vice versa for ease of access
+2.	Hypertext transfer protocol – transmits data over the web between client and server
+3.	Performs communications between server and client. Request obtained from client, filters data by evaluating request, transmit request to server, obtains server response, and transmit data to client.  
+4.	Hypertext transfer protocol secure - Being the secured version of HTTP, it obtains the request from client, authenticates the server, creates session key for server to decrypt, transfers data between server and client, then ends session for security.
+5.	Simple mail transfer protocol. Sending an email via outlook to the same doman (same server) or different domain.
+6.	Redundant array independent disks – 
+  a.	RAID0 splitting data into multiple drives
+  b.	RAID1 duplicating data into multiple drives
+  c.	RAID5 removes data from multiple drives
+  d.	RAID10 duplicates data into multiple drivers and then splits them into other paired drives
+7.	Series of directories for different functions while organizing, managing, and executing files/scripts.
+8.	SSH-key
+  a.	SSH-key.pub shared with remote servers to authenticate client
+  b.	SSH-key private for data decryption (for client only)
+9.	Root user & 0
+10.	Ls -a
+11.	Rm -r (directory name)
+12.	Free – no
+13.	Grep -r my kongfu is the best /path to directory
+14.	Secure shell login – log in using ssh user@ipaddress
+15.	Printenv 
+16.	Confirm ifconfig is installed and if not, run command yum install ifconfig
+17.	Autofills syntax when typing 
+18.	Df -h
+19.	Nslookup (domain)
+20.	Ownership – chown | permission – chmod 
+21.	Adds execute permission 
+22.	7 – read, write, execute for owner | 5 – read and execute for group | 0 – no permission for others
+23.	7 – read, write, and enter for owner | 5 – read and execute for group | 0 – no permission for others
+24.	Useradd (name)
+25.	Add - Usermod -aG group username | remove – usermod -d username group
+26.	Shortcut to execute multiple functions using single command
+27.	Usermod -c emailaddress username
+28.	Stops a running process
+29.	Navigates to the end of input or log out a terminal
+30.	List of network services and assigned port numbers
+31.	Redirect STDOUT  1>filepath | redirect STDERR 2> filepath
+32.	Linux to opensource to public meanwhile Unix has services developed and maintained by vendors
+33.	SSH is a secure method of logging in a server meanwhile Telnet is not secure as it lacks encryption.
+34.	Load averages
+  a.	Wa (wait time) – time CPU is writing and reading to/from disk
+  b.	Id (idle time) – time CPU is not executing processes and available for other tasks
+  c.	Sy (system time) – time CPU used to execute process/task
+  d.	Uptime command 
+35.	-i 
+36.	Parts of code that can be loaded and unloaded into kernel during runtime
+37.	Reboot system, interrupt boot loader to enter GRUB menu, select kernel to use and append the line, append the word single, then exit. Boot the system into single user mode for T/S a problem 
+38.	To T/S a 404 error, confirm URL is correct, ping domain, check log & configuration files, verify firewall 
+39.	Internet control message protocol – used to diagnose and manage network 
+40.	Define commands
+  a.	& - run command in background
+  b.	& disown – runs command in background even if shell session is terminated 
+41.	Packet filter ??
+42.	Virtual memory is remote memory supplementary to systems RAM
+43.	Swap memory/RAM used as extension to the hard drive when memory is full
+44.	A recrd NS record .. ???
+45.	RRs??
+46.	Split-horizon DNS?
+47.	Sticky bit is a special permission to grant only the owner of file within directory to delete or rename file
+48.	Immutable bit restricts certain operations on a file
+49.	Symlinks are pointers to files meanwhile hardlinks creates an exact copy of file. If source is removed, symlink is gone since it’s linked but hardlink still exists since it created a copy.
+50.	Inode stores all info associated with file except name and actual data. Inode contains device ID, group ID, user ID, and file permissions.
+51.	Force/trigger file ???
+52.	SNMP ??
+53.	Runlevel is current state of OS and are numbered 0 thru 6. Who -r is command to determine current runlevel
+54.	SSH port forwarding allows user to create encrypted connections between a local computer and a remote server while forwarding network traffic between them.
+55.	Local port forwarding allows you to securely access a sevice running on a remote server from local computer. Remote port forwarding allows you to display a service running on local computer to the remote server.
+56.	Edit /etc/passwd to create user name. Edit /etc/group to create a group. Add user name to group. Create home directory for user. Create password for user using passwd command.
+57.	MAJOR and MINOR ???
+58.	Mknod allows you to create device files and can be used when interfacing with hardware devices
+59.	Insufficient available INODES, excess cache memory, or reserved space for root user
+60.	Excess cache memory & filesystem journaling 
+61.	Ps displays the current process(es) actively running in the system
+62.	Child process becomes a Zombie which system memory would be consumed without any benefit
+63.	Process states
+  a.	Ready state – state of which process is ready and waiting for execution 
+  b.	Block state – process does not execute unless process event occurs
+  c.	Running state – process is currently executing 
+64.	Netstat …. | grep :(port number)
+65.	Zombie process is a process that completed its execution but still has withholds memory in system
+66.	Bash script | tee filename 
+67.	Echo “1” activates IP forwarding when forwarded to the file that controls IP forwarding
+68.	Create and install a valid certificate ???
+69.	Yes since it’s not local hosts
+70.	Used to secure multiple domains
+71.	Files, directories, and sockets
+72.	Threads share same memory space and resources meanwhile processes are isolated from each other. Threads are essentially segments of a process. Parent process maintains its PID meanwhile child process is assigned a new PID.
+73.	Fork creates new process that is a copy of parent process meanwhile exec replaces the current process with a new one.
+74.	Nohup ???
+75.	Export ???
+76.	NTP servers ???
+77.	Ntpq -p ???
+78.	Kernel ???
+79.	Host, Channel, ID, LUN ???
+80.	Limit process memory usage ???
+81.	What is bash quick ???
+82.	Alternate shells ???
+83.	Tarpipe ???
+84.	HTTPD package installed by systemctl status httpd
+85.	Rpm (package name)
+86.	Which package is better ???
+87.	Block-based and object-based ???
+88.	Localhost is current device. It could fail pinging itself due to network configuration issues or firewall
+89.	Ping and traceroute ???
+90.	Netstat
+91.	No, 255 is max of octet 
+92.	Ip ranges/subnets ???
+93.	Virtual local area network – splitting physical network into multiple logical networks
+94.	ARP ???
+95.	Transmission control protocol & user datagram protocol – TCP is connection oriented protocol. Establishing a connection before data transfer. UDP is connectionless protocol. Does not establish connection prior to data transfer so it’s quicker, but not as reliable as TCP
+96.	Default gateway is essentially a router routing traffic as an entry and exit point for data traffic between LAN and external networks
+97.	Routing table ???
+98.	TCP connection is more reliable, establishes connection before sending data, congestion and flow control
+99.	Source port is 8080 and destination port 443
+100.	IPv6 address ??? ifconfig
+101.	IPv4 / IPv6 to interface eth0
+102.	SNAT ???
+103.	DROPs ???
+104.	DDoS attack ???
+105.	IP packet ???
+106.	IPoAC ???
+107.	Bind port 0 ???
+108.	Chmod 744 /bin/chmod
+109.	Enter single user mode
+110.	Firewall, network configuration files, incorrect domain, no connection to internet
+111.	Mkdir, touch, chmod, chown, systemctl stop …
+112.	Systemctl restart
+113.	Ssh moustafa@192.168.1.***
+114.	Use tar command to check backup systems
+115.	Vacation 
+116.	Shutdown -r now
